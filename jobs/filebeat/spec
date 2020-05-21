@@ -1,6 +1,5 @@
 ---
 name: filebeat
-
 templates:
   bin/filebeat_ctl: bin/filebeat_ctl
   bin/monit_debugger: bin/monit_debugger
@@ -8,6 +7,7 @@ templates:
   data/properties.sh.erb: data/properties.sh
   helpers/ctl_setup.sh: helpers/ctl_setup.sh
   helpers/ctl_utils.sh: helpers/ctl_utils.sh
+
 
 packages:
   - filebeat
@@ -23,7 +23,5 @@ properties:
       - input_type: log
         paths:
           - /var/vcap/sys/log/*/*.log
-      output.file:
-        path: "/tmp"
-        filename: filebeat
-        rotate_every_kb: 10000
+      output.logstash:
+        hosts: ["10.244.0.25:5044"]
