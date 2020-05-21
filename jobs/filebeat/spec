@@ -16,3 +16,14 @@ properties:
   filebeat.environment:
     description:
     default: dev
+  filebeat.configuration:
+    description: filebeat configuration in yaml format
+    default: |
+      filebeat.prospectors:
+      - input_type: log
+        paths:
+          - /var/vcap/sys/log/*/*.log
+      output.file:
+        path: "/tmp"
+        filename: filebeat
+        rotate_every_kb: 10000
