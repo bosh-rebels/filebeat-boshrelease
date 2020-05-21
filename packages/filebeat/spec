@@ -4,4 +4,4 @@ name: filebeat
 dependencies: []
 
 files:
-  - filebeat/filebeat-5.2.2-linux-x86_64.tar.gz
+  - filebeat/filebeat-7.7.0.tar.gz
