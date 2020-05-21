@@ -16,12 +16,3 @@ properties:
   filebeat.environment:
     description:
     default: dev
-  filebeat.configuration:
-    description: filebeat configuration in yaml format
-    default: |
-      filebeat.prospectors:
-      - input_type: log
-        paths:
-          - /var/vcap/sys/log/*/*.log
-      output.logstash:
-        hosts: ["10.244.0.25:5044"]
