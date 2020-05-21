@@ -22,7 +22,7 @@ case $1 in
     chmod -R g+r /var/vcap/sys/log/*
     find /var/vcap/sys/log -type d -exec chmod g+x {} \;
 
-    exec chpst -u vcap:vcap /var/vcap/packages/filebeat/bin/filebeat \
+    exec chpst -u vcap:vcap /var/vcap/packages/filebeat/filebeat \
         -c /var/vcap/jobs/filebeat/config/filebeat.yml \
         -path.data $STORE_DIR \
         -path.logs $LOG_DIR \
