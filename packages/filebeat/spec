@@ -4,4 +4,4 @@ name: filebeat
 dependencies: []
 
 files:
-  - filebeat/filebeat-7.8.1.tar.gz
+  - filebeat/filebeat-7.9.0.tar.gz
