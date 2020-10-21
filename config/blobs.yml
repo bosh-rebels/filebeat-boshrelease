@@ -1,4 +1,4 @@
----
 filebeat/filebeat-7.9.0.tar.gz:
-  sha: 49090e4462561a8bdf8c5e7fa073775bf642da65
-  size: 27923978
+  size: 31346528
+  object_id: b26ccf8f-6cad-4bb6-68b4-b7fdc9c8e457
+  sha: sha256:9acc2966296133c13401418b5849a94218877fad4cddfa4faab465039839ef64
