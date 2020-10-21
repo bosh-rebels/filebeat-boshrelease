@@ -1,6 +1,8 @@
 ---
 name: filebeat
 blobstore:
-  provider: local
+  provider: s3
   options:
-    blobstore_path: /tmp/filebeat-blobs
+    bucket_name: filebeat-boshrelease-blobstore
+    region: eu-west-2
+    host: s3-eu-west-2.amazonaws.com
